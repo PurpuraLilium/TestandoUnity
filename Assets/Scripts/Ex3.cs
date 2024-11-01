@@ -23,13 +23,6 @@ public class Ex3 : MonoBehaviour
 
         }
 
-        if (vivo == false && powerup == true ) {
-            print("Morrendo");
-
-            VidaPlayer += 10 / 2;
-
-            print("Ainda n„o, vida atual VidaPlayer");
-         }
      }
   
 
@@ -37,5 +30,12 @@ public class Ex3 : MonoBehaviour
     void Update()
     {
         
+        if (vivo == false && powerup == true ) {
+            print("Morrendo");
+
+            VidaPlayer += 10 / 2;
+
+            print($"Ainda n√£o, vida atual {VidaPlayer}");
+         }
     }
 }
